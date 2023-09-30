@@ -1,30 +1,32 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-light shadow-3 p-4">
+        <button class="btn btn-link btn-block border-bottom m-0">Link 1</button>
+        <button class="btn btn-link btn-block border-bottom m-0">Link 2</button>
+        <button class="btn btn-link btn-block m-0">Link 3</button>
+      </div>
+    </div>
+    <!-- <nav>
+      <router-link to="/">HOME</router-link>
+      <router-link to="/mail">MAILING LIST</router-link>
+      <router-link to="/video">VIDEO</router-link>
+      <router-link to="/shop">SHOP</router-link>
+      <router-link to="/about">ABOUT</router-link>
+    </nav> -->
+  </header>
   <router-view/>
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>
